@@ -1,0 +1,28 @@
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <link rel=stylesheet type=text/css href="{{ url_for('static', filename='stylesheets/Mainpage.css') }}"/><!--เรียกstyleจากโฟลเดอร์ตามด้วยชื่อไฟล์-->
+      <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Kanit:400,300&subset=thai,latin' rel='stylesheet' type='text/css'>
+      <!--<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>-->
+      <!--<script type=text/javascript src="{{url_for('static', filename='js/test_call.js') }}"></script>-->
+      <title>Main</title>
+    </head>
+   <body>
+      <table align="center">
+         <tr>
+            <td><img src="{{url_for('static', filename='image/KMUTNB_Logo.png')}}"/></td>       
+            <td><img src="{{url_for('static', filename='image/NECTEC_Logo.png')}}" height="150" width="500"/></td>
+         </tr>
+      </table>
+      <div class="minibox">
+         <form action = "/result" method = "POST">
+            <h1>Python Web Scraping</h1>  
+            <button class="tablink" value="Investing" name="button">ราคาสกุลเงินดิจิตอล</button>
+            <button class="tablink" value="Covid" name="button">Covid-19 ในประเทศไทย</button>
+            <button class="tablink" value="Oil" name="button">ราคาน้ำมัน Shell</button>
+            <button class="tablink" value="Credit" name="button">Credit</button>
+         </form>
+      </div>
+   </body>
+</html>

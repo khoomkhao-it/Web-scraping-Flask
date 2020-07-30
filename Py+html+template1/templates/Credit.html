@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='stylesheets/Subpage.css') }}"/>
+    </head>
+    <body>
+        <div class="minibox">
+            <form action = "/result" method = "POST">  
+               <button class="tablink" value="Investing" name="button">ราคาสกุลเงินดิจิตอล</button>
+               <button class="tablink" value="Covid" name="button">Covid-19 ในประเทศไทย</button>
+               <button class="tablink" value="Oil" name="button">ราคาน้ำมัน Shell</button>
+               <button class="tablink" value="Credit" name="button">Credit</button>
+            </form>
+        </div>
+        <br>
+        <br>
+        <br>       
+        <div align="center" class="creditimage">
+            <img src="{{url_for('static', filename='image/KMUTNB_Logo.png')}}" height="200" width="200"/>
+            <img src="{{url_for('static', filename='image/NECTEC_Logo.png')}}" height="200" width="500"/>
+            <h1>สวัสดี</h1>
+        </div>
+    </body>
+</html>
